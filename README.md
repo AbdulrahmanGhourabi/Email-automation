@@ -1,16 +1,25 @@
+# Email Automation Script
 
- # Email Automation Script
+A simple Python script to send personalized emails using Gmail’s SMTP server (SSL, port 465).
 
-A simple Python script to send personalized emails to multiple recipients using Gmail’s SMTP with SSL.
+## What it does
 
-**Features:**  
-- Secure login with Gmail app password  
-- Custom greetings for each recipient  
-- Different subjects and messages per recipient  
-- Sends emails with a short delay to avoid spam filters  
+- Logs in with your Gmail and app password  
+- Sends emails with custom names, subjects, and messages  
+- Waits 2 seconds between emails  
+- Handles errors if login or sending fails
 
-**Requirements:**  
+## Tech used
+
 - Python 3  
-- Gmail account with app password enabled  
+- Built-in libraries: `smtplib`, `email.mime.text`, `time`  
+- No extra installs needed
 
-Easy to customize for your daily email automation needs.
+## How to use
+
+1. Add your Gmail and app password in the `sender` and `password` fields  
+2. Edit the recipients, subjects, and messages lists  
+3. Run the file:
+
+```bash
+python automatemail.py
